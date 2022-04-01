@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UACompatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- fullpage -->
+    <link rel="stylesheet" type="text/javascript" href="js/fullpage/jquery.fullpage.css">
+    <script type="text/javascript" src="js/fullpage/jquery.fullpage.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
+
+    <!-- TweenMax -->
+    <script src="js/tweenmax/gsap.min.js"></script>
+
+    <!-- montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- 사이드 바 -->
+    <div class="right-bar">
+        <button class="up"></button>
+        <button class="down"></button>
+    </div>
+
+    <!-- 헤더 고정 -->
+    <header class="header">
+        <span class="header-border-bottom"></span>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="로고">
+        </a>
+
+        <nav class="nav">
+            <ul class="gnb">
+                <li>
+                    <a href="#">하림소개</a>
+                    <i class="red-bar"></i>
+                    <ul class="submenu">
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">사업소개</a></li>
+                        <li><a href="#">투자정보</a></li>
+                        <li><a href="#">ESG 평가 자료실</a></li>
+                        <li><a href="#">사업장안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">제품정보</a>
+                    <span class="red-bar"></span>
+                    <ul class="submenu">
+                        <li><a href="#">브랜드관</a></li>
+                        <li><a href="#">전체제품</a></li>
+                        <li><a href="#">선물세트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">홍보센터</a>
+                    <span class="red-bar"></span>
+                    <ul class="submenu">
+                        <li><a href="#">뉴스룸</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">영상자료</a></li>
+                        <li><a href="#">하림 소식지</a></li>
+                        <li><a href="#">하림 SNS</a></li>
+                        <li><a href="#">견학신청</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <span class="red-bar"></span>
+                    <ul class="submenu">
+                        <li><a href="#">상담처리절차</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">문의결과 조회</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">채용정보</a>
+                    <span class="red-bar"></span>
+                    <ul class="submenu">
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">인재육성</a></li>
+                        <li><a href="#">직무소개</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">윤리경영</a>
+                    <span class="red-bar"></span>
+                    <ul class="submenu">
+                        <li><a href="#">윤리헌장</a></li>
+                        <li><a href="#">윤리기준</a></li>
+                        <li><a href="#">사회공헌활동</a></li>
+                        <li><a href="#">안전보건경영</a></li>
+                        <li><a href="#">동반성장</a></li>
+                        <li><a href="#">익명제보</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="help-list">
+            <a href="#" class="help-list-center">고객센터</a>
+            <a href="#" class="help-list-lang">ENG</a>
+            <a href="#" class="help-list-close">MENU</a>
+        </div>
+
+    </header>
+
+        <div class="fullpage-wrap" id="fullpage">
+
+            <div class="section section-1" id="sec-1" data-anchor="page1">
+
+                <div class="swiper-container sw-section-1-slide">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="main-bg">
+                                <a href="#" class="main-1">
+                                </a>
+                                <div class="more">
+                                    <a href="#" class="video-bt">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="main-bg">
+
+                                <video autoplay loop playsinline muted preload="auto" class="main-2">
+                                    <source src="./images/video0628-2.mp4" type="video/mp4">
+                                </video>
+
+                                <div class="main-2-box">
+                                    <div class="main-2-title">
+                                        <span>세계 최고 닭고기 생산을 위한 도전</span>
+                                        <h2>
+                                            2030 가금 식품기업
+                                            <i class="txt-red">세계 10위</i>
+                                        </h2>
+                                    </div>
+
+                                    <div class="main-2-txt">
+                                        <ul class="main-2-txt-list clearfix">
+                                            <li>
+                                                <i class="icon-1"></i>
+                                                <p>
+                                                    사육과 가공 공정에<br>
+                                                    동물복지 적용
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i class="icon-2"></i>
+                                                <p>
+                                                    세계 최고 닭고기<br>
+                                                    생산을 위한 도전
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i class="icon-3"></i>
+                                                <p>
+                                                    갓 잡은 닭고기의<br>
+                                                    신선한 제품 생산
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i class="icon-4"></i>
+                                                <p>
+                                                    2030 가금 식품기업<br>
+                                                    세계 10위
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="main-bg">
+                                <video autoplay loop playsinline muted preload="auto" class="main-3">
+                                    <source src="./images/harim021.mp4" type="video/mp4">
+                                </video>
+
+                                <div class="main-2-box">
+                                    <div class="main-2-title">
+                                        <span>맛있는 닭고기 요리</span>
+                                        <h2>
+                                            하림의
+                                            <i class="txt-red">신선한 닭고기</i>
+                                        </h2>
+                                    </div>
+
+                                    <div class="main-2-txt">
+                                        <ul class="main-2-txt-list clearfix">
+                                            <li>
+                                                <i class="icon-1"></i>
+                                                <p>
+                                                    맛있는 닭고기 요리
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i class="icon-2"></i>
+                                                <p>
+                                                    하림의 신선한<br>
+                                                    닭고기
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <i class="icon-3"></i>
+                                                <p>
+                                                    맛과 영양을<br>
+                                                    듬뿍담아
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination sw-section-1-pg"></div>
+                </div>
+
+
+            </div>
+
+            <div class="section section-2" id="sec-2" data-anchor="page2">
+                <div class="container clearfix">
+                    <div class="section-2-left">
+                        <a href="#">
+                            <img src="./images/main mid.jpg" alt="섹션2이미지">
+                        </a>
+                    </div>
+                    <div class="section-2-right">
+
+                        <div class="section-2-products">
+                            <h3>products</h3>
+                            <span>
+                                고객님들께 사랑받는 하림의 다양한<br>
+                                제품들을 소개합니다.
+                            </span>
+                            <!-- 슬라이드 좌우 이동버튼 -->
+                            <button class="swiper-button-next sw-section-2-next"></button>
+                            <button class="swiper-button-prev sw-section-2-prev"></button>
+                        </div>
+
+                        <!-- section-2-slide -->
+
+                        <div class="swiper-container sw-section-2-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-1">
+                                        <img src="./images/자연실록 동물복지 닭봉(윗날개) 300g.jpg" alt="윗날개">
+                                        <span>자연실록 동물복지 닭봉(윗날개)</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-1">
+                                        <img src="./images/AIRLINE 한마리닭 600g.jpg" alt="윗날개">
+                                        <span>AIRLINE 한마리닭 600g</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-1">
+                                        <img src="./images/AIRLINE 닭날개봉 500g.jpg" alt="윗날개">
+                                        <span>AIRLINE 닭날개봉 500g</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-1">
+                                        <img src="./images/한판 닭똥집볶음(소금구이) 300g.jpg" alt="윗날개">
+                                        <span>한판 닭똥집볶음(소금구이) 300g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-container sw-section-2-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-2">
+                                        <img src="./images/자연실록 동물복지 닭봉(아랫날개) 300g.jpg" alt="아랫날개">
+                                        <span>자연실록 동물복지 닭봉(아랫날개)</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-2">
+                                        <img src="./images/AIRLINE 조각닭 825g.jpg" alt="윗날개">
+                                        <span>AIRLINE 조각닭 825g</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-2">
+                                        <img src="./images/한판 불닭발볶음(매콤한맛) 300g.jpg" alt="윗날개">
+                                        <span>한판 불닭발볶음(매콤한맛) 300g</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-2">
+                                        <img src="./images/자연실록 동물복지 통닭 1050g.jpg" alt="윗날개">
+                                        <span>자연실록 동물복지 통닭 1,050g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-container sw-section-2-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-3">
+                                        <img src="./images/자연실록 동물복지 닭볶음탕용 1,000g.jpg" alt="닭볶음탕용">
+                                        <span>자연실록 동물복지 닭볶음탕용</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-3">
+                                        <img src="./images/AIRLINE 닭다리460g.jpg" alt="윗날개">
+                                        <span>AIRLINE 닭다리 460g</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-3">
+                                        <img src="./images/한판 닭주물럭(고추장맛) 300g.jpg" alt="윗날개">
+                                        <span>한판 닭주물럭(고추장맛) 300g</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="section-2-slide-box box-3">
+                                        <img src="./images/자연실록 동물복지 닭안심 300g.jpg" alt="윗날개">
+                                        <span>자연실록 동물복지 닭안심 300g</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-3" id="sec-3" data-anchor="page3">
+                <div class="container">
+                    <h2 class="brand-title">BRAND</h2>
+                    <span class="brand-txt">맛있는 하림 이야기! 국민이 사랑하는 건강한 대표 닭고기 브랜드를 소개합니다.</span>
+
+                    <div class="brand-box-wrap">
+
+                        <div class="swiper-container sw-section-3-slide">
+
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand1.jpg" alt="용가리치킨">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>용가리치킨</h2>
+                                            <p>
+                                                하림의 대표적인 브랜드 용가리 치킨. 공룡모양으로 만들어 아이들에게 먹는 재미와 즐거움을 주는 하림의 대표 육가공 제품입니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand2.jpg" alt="치킨너겟">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>치킨너겟</h2>
+                                            <p>
+                                                1992년 6월에 첫 출시 이후 꾸준하게 소비자들에게 사랑받는 제품으로 단백질 함량이 높고 지방이 적은 닭가슴살을 주원료로 사용한
+                                                고단백,
+                                                저칼로리 제품입니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand3.jpg" alt="삼계탕">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>삼계탕</h2>
+                                            <p>
+                                                하림 삼계탕은 신선한 닭고기 사용과 진한 국물 맛이 일품이며, 손질과 부재료 준비의 번거로움 없이 언제, 어디서든 간편하게 즐길
+                                                수 있도록
+                                                만들어진 인기 제품입니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand4.jpg" alt="삼계탕">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>자연실록 무항생제</h2>
+                                            <p>
+                                                자연의 깨끗함과 신선함을 그대로 담은 친환경 프리미엄 닭고기 제품으로 소비자들이 믿고 구매할 수 있도록 이력 관리 시스템을 도입,
+                                                운영하고
+                                                있습니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand5.jpg" alt="삼계탕">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>프레쉬업</h2>
+                                            <p>
+                                                국내 최초 동물복지 시스템을 적용하여 생산부터 유통까지 HACCP 인증을 받은 하림 대표 브랜드로서 자연의 신선함을 식탁에
+                                                올리겠다는
+                                                하림의 식품철학을 담았습니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand6.jpg" alt="삼계탕">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>IFF</h2>
+                                            <p>
+                                                생산 후 -35℃ 이하로 급속동결하여 닭고기 조직 파괴를 최소화한 냉장보다 더 신선한 냉동제품으로 닭고기 본연의 맛을 그대로
+                                                즐기실 수
+                                                있습니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand7.jpg" alt="삼계탕">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>자연실록 동물복지</h2>
+                                            <p>
+                                                가치소비를 지향하는 소비자들의 니즈를 충족 시키기 위해 준비한 브랜드로 농림축산식품부가 제시하는 기준보다 더욱 까다롭게 관리된
+                                                닭을
+                                                상품화한 프리미엄 브랜드 입니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="brand-box">
+                                        <div class="brand-img">
+                                            <img src="./images/brand8.jpg" alt="삼계탕">
+                                        </div>
+                                        <div class="brand-img-info">
+                                            <h2>닭가슴살</h2>
+                                            <p>
+                                                하림의 냉장 숙성 비법으로 8시간 동안 숙성하여 더욱 부드럽고 촉촉한 식감이 일품입니다.
+                                                대한민국 신선 닭고기 1위 하림의 국내산 닭가슴살을 사용해 더욱 신선합니다.
+                                            </p>
+                                            <span>제품 바로가기</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="sw-section-3-slide-prev"></div>
+                        <div class="sw-section-3-slide-next"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section section-4" id="sec-4" data-anchor="page4">
+                <div class="container">
+
+                    <div class="sns-top">
+
+                        <h2 class="sns-title">
+                            <i>하림</i>
+                            SNS
+                        </h2>
+                        <span class="sns-txt">
+                            맛있는 하림 이야기!<br>
+                            하림의 SNS를 통해서 만나보세요.
+                        </span>
+                        <ul class="sns-list clearfix">
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">인스타</a></li>
+                            <li><a href="#">유튜브</a></li>
+                            <li><a href="#">블로그</a></li>
+                        </ul>
+
+                        <div class="sns-youtube">
+                            <iframe width="590" height="394" src="https://www.youtube.com/embed/gpvlFaS_ipg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+
+                    <div class="sns-bottom">
+
+                        <ul class="sns-box-list clearfix">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/naver_2022-03-16.jpg" alt="닭볶음탕용" class="sns-img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/in_220113_01.jpg" alt="프라이팬" class="sns-img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/naver_2022-03-15.jpg" alt="피오봉사단" class="sns-img">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/insta_0708.jpg" alt="그립브라절" class="sns-img">
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-5" id="sec-5" data-anchor="page5">
+                <div class="container">
+                    <h2 class="respon-title">
+                        corporate social<br>
+                        responsibility
+                    </h2>
+                    <span class="respon-txt">
+                        하림은 기업의 사회적 책임을 다하여 경제, 사회, 환경에 대한 기여도 향상을 지향합니다.
+                    </span>
+                    <div class="respon-box-wrap">
+                        <div class="respon-box respon-box-1">
+                            <span>윤리경영</span>
+                        </div>
+                        <div class="respon-box respon-box-2">
+                            <span>동반성장</span>
+                        </div>
+                        <div class="respon-box respon-box-3">
+                            <span>안전보건</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-6" id="sec-6" data-anchor="page6">
+
+                <div class="container">
+
+                    <h2 class="respon-title">
+                        news room
+                    </h2>
+                    <span class="respon-txt">
+                        하림의 새롭고 다양한 소식을 전해드립니다.
+                    </span>
+
+                    <div class="respon-box-wrap">
+                        <div class="respon-box news-box">
+                            <div class="news-box-img">
+                                <img src="./images/20220303_1157511.png" alt="" class="k3">
+                            </div>
+                            <div class="news-box-txt">
+                                <p class="news-txt-1">
+                                    회사소식
+                                    <b>2022-03-03</b>
+                                </p>
+                                <p class="news-txt-2">
+                                    발렌타이데이, 복권을 긁어보세요
+                                </p>
+                                <p class="news-txt-3">
+                                    정읍공장, 소확행 이벤트 함께해
+                                </p>
+                            </div>
+                        </div>
+                        <div class="respon-box news-box">
+                            <div class="news-box-img">
+                                <img src="./images/20220303_113849.png" alt="" class="k3">
+                            </div>
+                            <div class="news-box-txt">
+                                <p class="news-txt-1">
+                                    회사소식
+                                    <b>2022-03-03</b>
+                                </p>
+                                <p class="news-txt-2">
+                                    건강한 일터 만들어가요
+                                </p>
+                                <p class="news-txt-3">
+                                    근골격계 부담작업 유해요인조사 실시
+                                </p>
+                            </div>
+                        </div>
+                        <div class="respon-box news-box">
+                            <div class="news-box-img">
+                                <img src="./images/noname012.jpg" alt="" class="k3">
+                            </div>
+                            <div class="news-box-txt">
+                                <p class="news-txt-1">
+                                    회사소식
+                                    <b>2022-03-03</b>
+                                </p>
+                                <p class="news-txt-2">
+                                    소스&닭가슴살 소앤닭 EVENT
+                                </p>
+                                <p class="news-txt-3">
+                                    오는 6일까지 자사몰에서 진행
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-6-footer">
+                    <div class="container">
+                        <h3 class="section-6-footer-txt">보도자료</h3>
+
+                        <ul class="section-6-footer-slide">
+
+                            <div class="swiper-container section-6-footer-sw">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <li>
+                                            <a href="#">
+                                                하림, 닭 한 마리에 순살 안심 더한 ‘순살 더드림 닭볶음탕용’ 출시
+                                            </a>
+                                            <span>2022-03-16</span>
+                                        </li>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <li>
+                                            <a href="#">
+                                                하림, 산불피해 이웃돕기 물품 지원
+
+                                            </a>
+                                            <span>2022-03-14</span>
+                                        </li>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <li>
+                                            <a href="#">
+                                                하림, ‘광양식 닭불고기’ 이마트 에브리데이에서 판매
+
+                                            </a>
+                                            <span>2022-03-14</span>
+                                        </li>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <li>
+                                            <a href="#">
+                                                하림, 친환경 경영활동 강화 나서
+                                            </a>
+                                            <span>2022-03-02</span>
+                                        </li>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <li>
+                                            <a href="#">
+                                                하림, 소비자 가족 대상 ‘피오봉사단 9기’ 모집
+                                            </a>
+                                            <span>2022-03-02</span>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </ul>
+
+                        <div class="sw-section-6-footer-prev"></div>
+                        <div class="sw-section-6-footer-next"></div>
+
+                        <button class="news-more"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section fp-auto-height section-7" id="sec-7" data-anchor="page7">
+
+                <footer class="footer">
+                    <div class="container">
+
+                        <div class="footer-box">
+
+                            <ul class="footer-rule clearfix">
+                                <li><a href="#">
+                                        <b class="f-bold">개인정보처리방침</b>
+                                    </a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">이메일무단수집거부</a></li>
+                                <li><a href="#">사업부서안내</a></li>
+                                <li><a href="#">생산이력관리</a></li>
+                            </ul>
+
+                            <address class="address">
+                                <p>
+                                    주소 : 전라북도 익산시 망성면 망성로 14(54517)
+                                    <span>&nbsp; |&nbsp; </span>
+                                    (주)하림 Tel 063-860-2114
+                                    <span> &nbsp;|&nbsp; </span>
+                                    Fax 063-861-7857
+                                </p>
+                                <p>고객지원실 : 080-254-2000(가공), 080-259-2000(신선)</p>
+                                <p class="copyright">Copyright © 2019 HARIM.Corporation. All Rights Reserved.</p>
+                            </address>
+
+                        </div>
+
+                        <div class="footer-harim">
+                            <a href="#" class="harim-btn">하림삼계탕</a>
+                            <!-- <select class="harim-family">하림패밀리사이트</select> -->
+                            <select class="harim-family">
+                                <option value='' selected>하림패밀리사이트</option>
+                                <option value=''>천하제일사료</option>
+                                <option value=''>NS홈쇼핑</option>
+                                <option value=''>주식회사 올품</option>
+                                <option value=''>(주)선진</option>
+                                <option value=''>맥시칸 치킨</option>
+                                <option value=''>주원산오리</option>
+                                <option value=''>팜스코</option>
+                                <option value=''>디디치킨</option>
+                                <option value=''>한국썸벧(주)</option>
+                                <option value=''>팬오션</option>
+                                <option value=''>한강씨엠</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    <!-- 왼쪽 사이드 바 -->
+    <div id="fp-nav" class="fp-left">
+        <ul></ul>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
