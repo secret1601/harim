@@ -7,6 +7,14 @@ $(document).ready(function () {
 
 	});
 
+	// * 모달창 생성
+    let modal = $('.modal');
+    let modal_close = $('.modal-close');
+
+    modal_close.click(function(){
+        modal.fadeOut(500);
+    });
+
 	// =======================================================
 	// 1. 메뉴 액티브 
 	let header = $('.header');
